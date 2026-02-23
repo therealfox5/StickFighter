@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000001 /* StickFighterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000001; };
+		A100000002 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000002; };
+		A100000003 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000003; };
+		A100000004 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000004; };
+		A100000005 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000005; };
+		A100000006 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000006; };
+		A100000007 /* FightScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000007; };
+		A100000008 /* HUDOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000008; };
+		A100000009 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000009; };
+		A100000010 /* FighterDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000010; };
+		A100000011 /* StickFigureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000011; };
+		A100000012 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000012; };
+		A100000013 /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000013; };
+		A100000014 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000014; };
+		A100000015 /* CombatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000015; };
+		A100000016 /* FighterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000016; };
+		A100000017 /* IdleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000017; };
+		A100000018 /* WalkingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000018; };
+		A100000019 /* JumpingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000019; };
+		A100000020 /* AttackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000020; };
+		A100000021 /* BlockingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000021; };
+		A100000022 /* HitStunState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000022; };
+		A100000023 /* KnockbackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000023; };
+		A100000024 /* KnockdownState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000024; };
+		A100000025 /* VictoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000025; };
+		A100000026 /* DefeatedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000026; };
+		A100000027 /* MoveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000027; };
+		A100000028 /* DamageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000028; };
+		A100000029 /* ComboDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000029; };
+		A100000030 /* HitEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000030; };
+		A100000031 /* InputBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000031; };
+		A100000032 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000032; };
+		A100000033 /* AIBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000033; };
+		A100000034 /* ArenaRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000034; };
+		A100000035 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000035; };
+		A100000036 /* AnimationClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000036; };
+		A100000037 /* AnimationLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000037; };
+		A100000038 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000038; };
+		A100000039 /* CharacterSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000039; };
+		A100000040 /* StageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000040; };
+		A100000041 /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000041; };
+		A100000042 /* VictoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000042; };
+		A100000043 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000043; };
+		A100000044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B100000044; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B100000000 /* StickFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B100000001 /* StickFighterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickFighterApp.swift; sourceTree = "<group>"; };
+		B100000002 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		B100000003 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B100000004 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B100000005 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B100000006 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B100000007 /* FightScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightScene.swift; sourceTree = "<group>"; };
+		B100000008 /* HUDOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDOverlay.swift; sourceTree = "<group>"; };
+		B100000009 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		B100000010 /* FighterDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterDefinition.swift; sourceTree = "<group>"; };
+		B100000011 /* StickFigureRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickFigureRenderer.swift; sourceTree = "<group>"; };
+		B100000012 /* AnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		B100000013 /* HealthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
+		B100000014 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		B100000015 /* CombatComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatComponent.swift; sourceTree = "<group>"; };
+		B100000016 /* FighterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FighterState.swift; sourceTree = "<group>"; };
+		B100000017 /* IdleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleState.swift; sourceTree = "<group>"; };
+		B100000018 /* WalkingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingState.swift; sourceTree = "<group>"; };
+		B100000019 /* JumpingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingState.swift; sourceTree = "<group>"; };
+		B100000020 /* AttackingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackingState.swift; sourceTree = "<group>"; };
+		B100000021 /* BlockingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingState.swift; sourceTree = "<group>"; };
+		B100000022 /* HitStunState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitStunState.swift; sourceTree = "<group>"; };
+		B100000023 /* KnockbackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockbackState.swift; sourceTree = "<group>"; };
+		B100000024 /* KnockdownState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockdownState.swift; sourceTree = "<group>"; };
+		B100000025 /* VictoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryState.swift; sourceTree = "<group>"; };
+		B100000026 /* DefeatedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatedState.swift; sourceTree = "<group>"; };
+		B100000027 /* MoveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveData.swift; sourceTree = "<group>"; };
+		B100000028 /* DamageCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageCalculator.swift; sourceTree = "<group>"; };
+		B100000029 /* ComboDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboDetector.swift; sourceTree = "<group>"; };
+		B100000030 /* HitEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitEffect.swift; sourceTree = "<group>"; };
+		B100000031 /* InputBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBuffer.swift; sourceTree = "<group>"; };
+		B100000032 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		B100000033 /* AIBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBrain.swift; sourceTree = "<group>"; };
+		B100000034 /* ArenaRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaRenderer.swift; sourceTree = "<group>"; };
+		B100000035 /* PoseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		B100000036 /* AnimationClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationClip.swift; sourceTree = "<group>"; };
+		B100000037 /* AnimationLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLibrary.swift; sourceTree = "<group>"; };
+		B100000038 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		B100000039 /* CharacterSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectView.swift; sourceTree = "<group>"; };
+		B100000040 /* StageSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSelectView.swift; sourceTree = "<group>"; };
+		B100000041 /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
+		B100000042 /* VictoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryView.swift; sourceTree = "<group>"; };
+		B100000043 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		B100000044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D100000000 = {
+			isa = PBXGroup;
+			children = (
+				D100000001 /* StickFighter */,
+				D100000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D100000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000 /* StickFighter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D100000001 /* StickFighter */ = {
+			isa = PBXGroup;
+			children = (
+				D100000002 /* App */,
+				D100000003 /* Core */,
+				D100000004 /* Scenes */,
+				D100000005 /* Entities */,
+				D100000006 /* Components */,
+				D100000007 /* States */,
+				D100000008 /* Combat */,
+				D100000009 /* Input */,
+				D100000010 /* AI */,
+				D100000011 /* Arena */,
+				D100000012 /* Animation */,
+				D100000013 /* UI */,
+				D100000014 /* Audio */,
+				D100000015 /* Resources */,
+			);
+			path = StickFighter;
+			sourceTree = "<group>";
+		};
+		D100000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B100000001 /* StickFighterApp.swift */,
+				B100000002 /* GameCoordinator.swift */,
+				B100000003 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D100000003 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B100000004 /* Constants.swift */,
+				B100000005 /* Extensions.swift */,
+				B100000006 /* Enums.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D100000004 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B100000007 /* FightScene.swift */,
+				B100000008 /* HUDOverlay.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D100000005 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B100000009 /* Fighter.swift */,
+				B100000010 /* FighterDefinition.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D100000006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B100000011 /* StickFigureRenderer.swift */,
+				B100000012 /* AnimationComponent.swift */,
+				B100000013 /* HealthComponent.swift */,
+				B100000014 /* PhysicsComponent.swift */,
+				B100000015 /* CombatComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D100000007 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				B100000016 /* FighterState.swift */,
+				B100000017 /* IdleState.swift */,
+				B100000018 /* WalkingState.swift */,
+				B100000019 /* JumpingState.swift */,
+				B100000020 /* AttackingState.swift */,
+				B100000021 /* BlockingState.swift */,
+				B100000022 /* HitStunState.swift */,
+				B100000023 /* KnockbackState.swift */,
+				B100000024 /* KnockdownState.swift */,
+				B100000025 /* VictoryState.swift */,
+				B100000026 /* DefeatedState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		D100000008 /* Combat */ = {
+			isa = PBXGroup;
+			children = (
+				B100000027 /* MoveData.swift */,
+				B100000028 /* DamageCalculator.swift */,
+				B100000029 /* ComboDetector.swift */,
+				B100000030 /* HitEffect.swift */,
+			);
+			path = Combat;
+			sourceTree = "<group>";
+		};
+		D100000009 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				B100000031 /* InputBuffer.swift */,
+				B100000032 /* InputManager.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		D100000010 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				B100000033 /* AIBrain.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		D100000011 /* Arena */ = {
+			isa = PBXGroup;
+			children = (
+				B100000034 /* ArenaRenderer.swift */,
+			);
+			path = Arena;
+			sourceTree = "<group>";
+		};
+		D100000012 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B100000035 /* PoseData.swift */,
+				B100000036 /* AnimationClip.swift */,
+				B100000037 /* AnimationLibrary.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		D100000013 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B100000038 /* MainMenuView.swift */,
+				B100000039 /* CharacterSelectView.swift */,
+				B100000040 /* StageSelectView.swift */,
+				B100000041 /* PauseView.swift */,
+				B100000042 /* VictoryView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D100000014 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B100000043 /* AudioManager.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		D100000015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B100000044 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E100000001 /* StickFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F100000003 /* Build configuration list for PBXNativeTarget "StickFighter" */;
+			buildPhases = (
+				E100000002 /* Sources */,
+				C100000001 /* Frameworks */,
+				E100000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickFighter;
+			productName = StickFighter;
+			productReference = B100000000 /* StickFighter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E100000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E100000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F100000001 /* Build configuration list for PBXProject "StickFighter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D100000000;
+			productRefGroup = D100000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E100000001 /* StickFighter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E100000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000044 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E100000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000001 /* StickFighterApp.swift in Sources */,
+				A100000002 /* GameCoordinator.swift in Sources */,
+				A100000003 /* RootView.swift in Sources */,
+				A100000004 /* Constants.swift in Sources */,
+				A100000005 /* Extensions.swift in Sources */,
+				A100000006 /* Enums.swift in Sources */,
+				A100000007 /* FightScene.swift in Sources */,
+				A100000008 /* HUDOverlay.swift in Sources */,
+				A100000009 /* Fighter.swift in Sources */,
+				A100000010 /* FighterDefinition.swift in Sources */,
+				A100000011 /* StickFigureRenderer.swift in Sources */,
+				A100000012 /* AnimationComponent.swift in Sources */,
+				A100000013 /* HealthComponent.swift in Sources */,
+				A100000014 /* PhysicsComponent.swift in Sources */,
+				A100000015 /* CombatComponent.swift in Sources */,
+				A100000016 /* FighterState.swift in Sources */,
+				A100000017 /* IdleState.swift in Sources */,
+				A100000018 /* WalkingState.swift in Sources */,
+				A100000019 /* JumpingState.swift in Sources */,
+				A100000020 /* AttackingState.swift in Sources */,
+				A100000021 /* BlockingState.swift in Sources */,
+				A100000022 /* HitStunState.swift in Sources */,
+				A100000023 /* KnockbackState.swift in Sources */,
+				A100000024 /* KnockdownState.swift in Sources */,
+				A100000025 /* VictoryState.swift in Sources */,
+				A100000026 /* DefeatedState.swift in Sources */,
+				A100000027 /* MoveData.swift in Sources */,
+				A100000028 /* DamageCalculator.swift in Sources */,
+				A100000029 /* ComboDetector.swift in Sources */,
+				A100000030 /* HitEffect.swift in Sources */,
+				A100000031 /* InputBuffer.swift in Sources */,
+				A100000032 /* InputManager.swift in Sources */,
+				A100000033 /* AIBrain.swift in Sources */,
+				A100000034 /* ArenaRenderer.swift in Sources */,
+				A100000035 /* PoseData.swift in Sources */,
+				A100000036 /* AnimationClip.swift in Sources */,
+				A100000037 /* AnimationLibrary.swift in Sources */,
+				A100000038 /* MainMenuView.swift in Sources */,
+				A100000039 /* CharacterSelectView.swift in Sources */,
+				A100000040 /* StageSelectView.swift in Sources */,
+				A100000041 /* PauseView.swift in Sources */,
+				A100000042 /* VictoryView.swift in Sources */,
+				A100000043 /* AudioManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F100000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F100000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F100000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stickfighter.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F100000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stickfighter.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F100000001 /* Build configuration list for PBXProject "StickFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F100000010 /* Debug */,
+				F100000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F100000003 /* Build configuration list for PBXNativeTarget "StickFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F100000012 /* Debug */,
+				F100000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = E100000000 /* Project object */;
+}
